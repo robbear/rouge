@@ -1,0 +1,18 @@
+bound numbers = Int
+
+// TODO parentheses should not be necessary around sum[numbers]
+
+def sum_numbers1 = sum[numbers]
+// def sum_numbers2 = x: (sum[numbers])(x)
+
+@inline
+def sum = F :+ delve_reduce[add, F]
+
+@inline
+def add = x y :+ delve_add[x, y]
+
+bound add = Int * Int * Int
+
+// def Min = F :+ delve_reduce[min, F]
+// @inline
+// def min = x y :+ delve_min[x, y]

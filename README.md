@@ -1,3 +1,24 @@
+# Setup
+
+## Dependencies
+```bash
+sudo apt-get install ruby ruby-bundler ruby-dev
+cd rouge
+bundle install
+```
+## Build
+
+```bash
+rake
+```
+
+## Test
+
+```bash
+rackup
+```
+Then launch http://localhost:9292/delve in a browser
+
 # Rouge
 
 [![Build Status](https://secure.travis-ci.org/rouge-ruby/rouge.svg)](https://travis-ci.org/rouge-ruby/rouge)

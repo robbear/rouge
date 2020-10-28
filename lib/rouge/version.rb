@@ -3,6 +3,6 @@
 
 module Rouge
   def self.version
-    "3.24.0"
+    "3.24.0-delve"
   end
 end
