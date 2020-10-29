@@ -3,16 +3,16 @@
 
 module Rouge
   module Lexers
-    class Delve < RegexLexer
-      title "Delve"
-      desc "The Delve programming language (www.relational.ai)"
-      tag 'delve'
-      aliases 'delve'
-      filenames '*.delve'
-      mimetypes 'text/x-delve', 'application/x-delve'
+    class Rel < RegexLexer
+      title "Rel"
+      desc "The Rel programming language (www.relational.ai)"
+      tag 'rel'
+      aliases 'rel'
+      filenames '*.rel'
+      mimetypes 'text/x-rel', 'application/x-rel'
 
       def self.detect?(text)
-        return true if text.shebang?(/delvew?(?:[23](?:\.\d+)?)?/)
+        return true if text.shebang?(/relw?(?:[23](?:\.\d+)?)?/)
       end
 
       def self.keywords
